@@ -1,19 +1,122 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/script-1.0.js"></script>
+
+        <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+        <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet"/>
+
         <title>${head.title}</title>
-
-        <style lang=""></style>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/script-1.0.js"></script>
-
     </head>
 
     <body>
-    <h1>Heading</h1>
-    <div>
-        Content <span f="main.hw" />
+
+    <div class="heading">
+
+        www.my-office-example.xyz
+
+        <div class="menu">
+            <a href="#intro">Introduction</a>&nbsp;
+            <a href="#persona">Persona</a>&nbsp;
+            <a href="#detail">Details</a>&nbsp;
+            <a href="#contact">Contact</a>&nbsp;
+            <a href="#openingtimes">Opening times</a>&nbsp;
+        </div>
+
     </div>
+
+    <div class="section intro">
+
+        <h1><a name="intro">The Office for your needs!</a></h1>
+
+
+    </div>
+
+    <div class="section persona">
+
+        <h1><a name="persona">Persona</a></h1>
+
+        <div>
+            <div style="float: left; width: 20%;">
+                <img src="imgs/person.png" alt="" style="height: 200px"/>
+            </div>
+            <div style="float: left; width: 80%;">
+                Dr. Sabine Meiser-Binkenstein<br/>
+                CEO - Supertalent
+            </div>
+            <div style="clear: both;" />
+        </div>
+
+        <div style="margin-top: 10px;">
+            <div style="float: left; width: 30%;">
+                <img src="imgs/persons.png" alt="" style="height: 200px"/>
+            </div>
+            <div style="float: left; width: 70%;">
+                Executive Board<br/>
+                Dr. No Look, Aventur Brightney, Caro Wash, Dr. Serious Step, Smiley Blackhaire, Dr. Hes Here<br/>
+                (left to right)
+            </div>
+            <div style="clear: both;" />
+        </div>
+
+    </div>
+
+    <div class="section detail">
+
+        <h1><a name="detail">Details</a></h1>
+
+        <ul>
+            <li>We do great work. Any promise we make we make you belive it is true. You will love to stick with it. Our results speak some sort that language.</li>
+            <li>Another argument is this. It is here for having a second bullet item. So do not bet on it too much!</li>
+        </ul>
+
+    </div>
+
+    <div class="section contact">
+
+        <h1><a name="contact">Contact</a></h1>
+
+        <div class="address" style="margin-bottom: 10px;">
+
+            <div>Office Interessante</div>
+            <div>Cometo Street 12</div>
+            <div>12345 Niceplace</div>
+            <div>Goodland</div>
+
+            <div><a href="mailto:contact@my-office-example.xyz">contact@my-office-example.xyz</a></div>
+
+            <div><a href="tel:+11 234 567 8899">+11 234 567 8</a></div>
+
+        </div>
+
+        <div id="osm-map"></div>
+
+    </div>
+
+    <div class="section openingtimes">
+
+        <h1><a name="openingtimes">Opening times</a></h1>
+
+
+    </div>
+
+    <div class="bottom">
+
+        <a href="imprint.html">Imprint</a>
+
+
+    </div>
+
+    <script type="application/javascript">
+        main.init('osm-map');
+    </script>
+
     </body>
 
 </html>
