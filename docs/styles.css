@@ -16,6 +16,11 @@ a:focus{
     color: chocolate;
 }
 
+td {
+    vertical-align: top;
+    text-align: left;
+    padding: 10px;
+}
 
 body > div {
     margin: 5px;
@@ -28,7 +33,6 @@ div.heading {
     background-color: blanchedalmond;
     padding: 10px;
     text-transform: uppercase;
-
     text-effect: emboss;
 }
 
@@ -39,15 +43,13 @@ div.heading a {
 }
 
 div.section {
-
     background-color: beige;
     border-top: 1px solid darkgrey;
 }
 
 div.bottom {
-
     color: gray;
-    background-color: darkgrey;
+    background-color: navajowhite;
     padding-top: 10px;
 }
 
